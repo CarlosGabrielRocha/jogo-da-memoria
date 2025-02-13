@@ -4,7 +4,6 @@ body {
     background-image: url('../assets/background5.jpg');
     background-position: bottom center;
     background-size: cover;
-    overflow: hidden;
 }
 
 /* Corpos celestes */
