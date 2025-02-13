@@ -39,6 +39,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 99.9vw;
+    height: 99.9vh;
     font-family: 'jersey10';
     color: var(--main-color);
     background-color: black;
@@ -51,8 +53,9 @@ body {
     display: grid;
     grid-auto-columns: 8rem;
     grid-auto-rows: 5rem;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     z-index: -1;
 }
 
