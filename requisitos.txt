@@ -1,0 +1,36 @@
+Requisitos:
+
+Gerais
+
+- O app deve ter um menu que servirá como página de boas vindas com uma interface bem apresentável e uma outra página onde ficará o jogo em si.
+- O tema será galáxia.
+- O app deve apresentar responsividade para diferentes páginas.
+
+Menu
+
+- Deve conter um botão para iniciar o jogo e um texto com animação de digitação "Boas vindas"
+
+página do game
+
+- Deve conter uma contagem de jogadas que o jogador já fez.
+- Deve conter uma contagem de acertos e restantes.
+- Ao clicar em uma carta ela deve girar e aparecer o seu conteúdo
+- Ao clicar na primeira carta ela deve permanecer virara pra cima até que a outra seja clicada.
+- Com duas cartas selecionadas o programa deve verificar se houve acerto ou não, caso haja acerto as cartas devem desaparecer, caso o contrário elas devem voltar para o seu estado inicial.
+- Após o usuário acertar tudo, um texto de agradecimento por ter jogado deve aparecer, além de dois botões: Voltar ao Menu e Jogar novamente.
+- Caso o botão de Jogar novamente for escolhido, o jogo deve reiniciar.
+
+Página 1
+
+Index.html
+index.css
+index.js
+
+Página 2
+
+// ...
+
+Linguagens:
+
+TypeScript, CSS3, HTML5
+

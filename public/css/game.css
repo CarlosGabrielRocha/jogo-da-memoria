@@ -1,0 +1,92 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/background2.jpg');
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.points-section {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 20px;
+    border: 1px solid var(--main-color);
+}
+
+.points-section span:nth-child(2) {
+    padding: .5rem;
+    margin: 0rem 2rem;
+    border-right: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+}
+
+main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-container {
+    width: 6em;
+    height: 9em;
+    font-size: 16px;
+    perspective: 1000px;
+    transition: 1s opacity; 
+}
+
+.card-container .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card-inner {
+    position: relative;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card {
+    width: 6em;
+    height: 9em;
+    object-fit: cover;
+    border-radius: 1rem;
+    user-select: none;
+}
+
+/* Estilos utilizados de forma dinâmica */
+
+.flip {
+    transform: rotateY(-180deg);
+}
+
+/* Modo fácil */
+
+.easy-grid {
+    grid-template-columns: repeat(6, min-content);
+    grid-template-rows: repeat(3, 1fr);  
+}
+
+/* Modo médio */
+
+.medium-grid {
+    grid-template-columns: repeat(8, min-content);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* Modo difícil */
+
+.hard-grid {
+    grid-template-columns: repeat(12, min-content);
+    grid-template-rows: repeat(3, 1fr);    
+}

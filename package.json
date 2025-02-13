@@ -1,0 +1,26 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosGabrielRocha/jogo-da-memoria.git"
+  },
+  "author": "Carlos Gabriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosGabrielRocha/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/CarlosGabrielRocha/jogo-da-memoria#readme",
+  "devDependencies": {
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
