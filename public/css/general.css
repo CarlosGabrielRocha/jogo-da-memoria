@@ -38,6 +38,7 @@ body {
     font-family: 'jersey10';
     color: var(--main-color);
     background-color: black;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
