@@ -1,3 +1,4 @@
+import { addBlurBackground, removeBlurBackground } from "./blur-background"
 import { createElement, newTextElement, newButton, newAnchorElement } from "./create-elements"
 import { Game } from "./Game"
 
@@ -9,8 +10,8 @@ let game: Game
 
 export function renderGamemodeOptions() {
     const sectionOpt = createElement('section', '', 'game-options')
-    const p = newTextElement('p', 'Select the difficulty')
-    const btnContainer = createElement('div', '', 'mode-btn-container')
+    const p = newTextElement('p', 'Selecione a dificuldade')
+    const btnContainer = createElement('div', '', 'btn-container')
     const easyBtn = newButton('Easy', '', 'easy-btn', 'mode-btn')
     easyBtn.dataset.difficulty = 'easy'
     const mediumBtn = newButton('Medium', '', 'medium-btn', 'mode-btn')
@@ -21,9 +22,6 @@ export function renderGamemodeOptions() {
     btnContainer.append(easyBtn, mediumBtn, hardBtn)
     sectionOpt.append(p, btnContainer)
     
-    /* Remover esse estilo depois */
-    sectionOpt.style.position = 'absolute'
-    sectionOpt.style.top = '300px'
     document.body.appendChild(sectionOpt)
 
     document.querySelectorAll('.mode-btn').forEach((btn: HTMLButtonElement) => {
@@ -39,8 +37,8 @@ export function renderGamemodeOptions() {
 
 export function renderGameoverOptions() {
     const sectionOpt = createElement('section', '', 'game-options')
-    const p = newTextElement('p', 'O que vai fazer agora?')
-    const btnContainer = createElement('div', '', 'opt-btn-container')
+    const p = newTextElement('p', 'Fim de jogo')
+    const btnContainer = createElement('div', '', 'btn-container')
     const playAgainBtn = newButton('Play again', '', 'play-again-btn', 'opt-btn')
     const changeModeBtn = newButton('Change mode', '', 'change-mode-btn', 'opt-btn')
     const ExitBtn = newButton('Exit', '', 'exit-btn', 'opt-btn')
@@ -48,9 +46,6 @@ export function renderGameoverOptions() {
     btnContainer.append(playAgainBtn, changeModeBtn, ExitBtn)
     sectionOpt.append(p, btnContainer)
     
-    /* Remover esse estilo depois */
-    sectionOpt.style.position = 'absolute'
-    sectionOpt.style.top = '300px'
     document.body.appendChild(sectionOpt)
 
     playAgainBtn.addEventListener('click', () => {
@@ -80,24 +75,27 @@ export function renderFinishBtn() {
 /* Remderiza a tela de confirmação para finalizar o jogo. */
 
 function renderConfirmScreen() {
-    const confirmSection = createElement('section', '', 'confirm-container')
-    const p = newTextElement('p', 'Você tem certeza que finalizar o jogo?')
-    const btnContainer = createElement('div', '', 'opt-btn-container')
-    const yesButton = newButton('Sim', '', 'opt-btn')
-    const noButton = newButton('Não', '', 'opt-btn')
+    const confirmSection = createElement('section', 'confirm-section', 'game-options')
+    const p = newTextElement('p', 'Encerrar o jogo?')
+    const btnContainer = createElement('div', '', 'btn-container')
+    const yesButton = newButton('Yes', '', 'opt-btn')
+    const noButton = newButton('No', '', 'opt-btn')
 
     yesButton.addEventListener('click', () => {
         confirmSection.remove()
-        game.finishGame()   
+        game.finishGame()
+        removeBlurBackground()   
     })
 
     noButton.addEventListener('click', () => {
         confirmSection.remove()
+        removeBlurBackground()
     })
 
     btnContainer.append(yesButton, noButton)
     confirmSection.append(p, btnContainer)
     document.body.appendChild(confirmSection)
+    addBlurBackground()
 }
 
 

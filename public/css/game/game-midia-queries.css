@@ -1,0 +1,165 @@
+@media (min-width: 1440px) {
+    body {
+        font-size: 20px;
+    }   
+
+    main, .card-container {
+        font-size: 17px;
+    }
+}
+
+
+@media (min-width: 1780px) {
+    body {
+        font-size: 25px;
+    }
+
+    main, .card-container {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1980px) {
+    body {
+        font-size: 30px;
+    }
+
+    main, .card-container {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 2450px) {
+    body {
+        font-size: 36px;
+    }
+
+    main, .card-container {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 1199.98px) { 
+    body {
+        font-size: 16px;
+    }
+
+    main, .card-container {
+        font-size: 14px;
+    }  
+    
+    main {
+        margin-top: 3rem;
+    }
+
+    .card {
+        border-radius: .5rem;
+    }
+
+    /* grid */
+
+    .hard-grid {
+        grid-template-columns: repeat(9, min-content);
+        grid-template-rows: repeat(4, 1fr);    
+    }
+
+}
+
+
+@media (max-width: 991.98px) { 
+    body {
+        font-size: 14px;
+    }
+
+    main, .card-container {
+        font-size: 13px;
+    }  
+    
+    main {
+        margin-top: 3rem;
+    }
+
+    /* grid */
+
+    .hard-grid {
+        grid-template-columns: repeat(9, min-content);
+        grid-template-rows: repeat(4, 1fr);    
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    body {
+        font-size: 13px;
+    }
+
+    main, .card-container {
+        font-size: 9.7px;
+    }
+
+    main {
+        gap: 2px;
+        margin-top: 4rem;
+    }
+
+    .card-container {
+        margin: 0 .2rem;
+    }
+
+    /* Grid */
+
+    .easy-grid {
+        grid-template-columns: repeat(6, min-content);
+        grid-template-rows: repeat(4, 1fr);   
+    }
+
+    .medium-grid {
+        grid-template-columns: repeat(6, min-content);
+        grid-template-rows: repeat(4, 1fr);   
+    }
+
+    .hard-grid {
+        grid-template-columns: repeat(6, min-content);
+        grid-template-rows: repeat(5, 1fr);    
+    }
+
+    /* Telas */
+
+    .finish-game-btn {
+        left: auto;
+        top: 4rem;
+        box-shadow: 1px 1px 8px 0px #ffffff7e;
+    }
+}
+
+@media (max-width: 430.98px) { 
+    body {
+        font-size: 12px;
+    }
+
+    main, .card-container {
+        font-size: 9.5px;
+    }
+
+    .card-container {
+        margin: 0 .05rem;
+    }
+
+    main {
+        gap: 3px;
+        margin-top: 3rem;
+    }
+
+    /* Telas */
+
+    section.game-options {
+        width: 90%;
+    }
+
+    .finish-game-btn {
+        left: auto;
+        top: 4rem;
+        box-shadow: 1px 1px 8px 0px #ffffff7e;
+    }
+}

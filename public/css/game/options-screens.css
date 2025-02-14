@@ -1,0 +1,66 @@
+
+/* Gerais */
+
+section.game-options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 26em; 
+    height: 14em;
+    box-shadow: 3px 1px 5px 1px #0000003f;
+    background-color: var(--grey);
+    border-radius: 10px;
+    border: 2px solid var(--black);
+}
+
+section.game-options p {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99.9%;
+    padding: .5rem;
+    font-size: 1.5em;
+    background-color: var(--darker-transparent);
+    color: var(--main-color);
+    border-bottom: 1.5px solid var(--main-color); 
+}
+
+.game-options .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.btn-container button {
+    width: 13em;
+}
+
+.btn-container button:hover {
+    transform: scale(0.95);
+    transition: .2s transform;
+}
+
+/* Botão para terminar jogo */
+
+.finish-game-btn {
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+    width: 15em;
+}
+
+/* Tela de confirmação */
+
+#confirm-section {
+    background-color: var(--grey);
+    z-index: 100;
+}
+
+#confirm-section .btn-container {
+    justify-content: space-around;
+}
