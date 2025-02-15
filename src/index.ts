@@ -1,3 +1,5 @@
+/* Arquivo principal da página index. */
+
 import { restartMeteorAnimation } from "./meteor"
 
 setInterval(restartMeteorAnimation, 15000)

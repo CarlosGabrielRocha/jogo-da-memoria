@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Estilos que serão usados tanto pela página index, quanto pela página game. */
+
 @font-face {
     font-family: 'jersey10';
     src: url('../fonts/jersey10.ttf') format('TrueType');

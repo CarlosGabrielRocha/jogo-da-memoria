@@ -69,8 +69,8 @@ export class Game {
     private createCards(loopLength: number) {
         for (let i = 1; i <= loopLength; i++) {
             const idNumber = this.getIdNumber()
-            const card1 = new Card(`./assets/memory${i}.jpg`, idNumber)
-            const card2 = new Card(`./assets/memory${i}.jpg`, idNumber)
+            const card1 = new Card(`./assets/memory${i}.webp`, idNumber)
+            const card2 = new Card(`./assets/memory${i}.webp`, idNumber)
             Game.cards.push(card1, card2) 
         }
 

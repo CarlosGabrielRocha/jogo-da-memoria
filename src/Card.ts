@@ -1,5 +1,4 @@
 import { createElement, newImg } from "./create-elements";
-import { Game } from "./Game";
 
 export class Card {
     private _idNumber: string
@@ -43,6 +42,7 @@ export class Card {
         document.querySelector('main').appendChild(this._element)
     }
 
+    /* Girar carta. */
     public flipCard() {
         const cardInner = this.element.querySelector('.card-inner')
         cardInner.classList.toggle('flip')

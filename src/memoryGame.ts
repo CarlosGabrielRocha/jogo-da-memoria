@@ -1,3 +1,5 @@
+/* Arquivo principal da página game. */
+
 import { restartMeteorAnimation } from "./meteor";
 import { renderGamemodeOptions } from "./options-screens";
 

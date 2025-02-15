@@ -1,5 +1,7 @@
 import { createElement, newTextElement } from "./create-elements";
 
+/* Pontuação do jogo. */
+
 export class PointsScreen {
     private element: HTMLElement
     private _turns: number
